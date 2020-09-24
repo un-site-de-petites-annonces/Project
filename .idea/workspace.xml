@@ -20,12 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78e860ac-1cb0-4d0e-b0c4-cde32d3b4577" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/view/CallLogin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/CallLogout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/CallSign.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/Logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Logout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/SignIn.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Mysql.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Mysql.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/CallLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/CallLogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/SignIn.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/SignIn.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600941560315</updated>
-      <workItem from="1600941561685" duration="10863000" />
+      <workItem from="1600941561685" duration="14121000" />
     </task>
     <servers />
   </component>
@@ -99,10 +104,10 @@
       <screen x="72" y="26" width="1848" height="1054" />
     </state>
     <state x="200" y="408" width="1397" height="301" key="#SQL_Dialects/72.26.1848.1054@72.26.1848.1054" timestamp="1600946754732" />
-    <state x="692" y="355" width="598" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600941741429">
+    <state x="692" y="355" width="615" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600954666928">
       <screen x="72" y="26" width="1848" height="1054" />
     </state>
-    <state x="692" y="355" width="598" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.26.1848.1054@72.26.1848.1054" timestamp="1600941741429" />
+    <state x="692" y="355" width="615" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.26.1848.1054@72.26.1848.1054" timestamp="1600954666928" />
     <state x="791" y="478" width="399" height="156" key="NewPhpFileDialog" timestamp="1600951498445">
       <screen x="72" y="26" width="1848" height="1054" />
     </state>

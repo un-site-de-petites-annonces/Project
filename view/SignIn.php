@@ -8,14 +8,14 @@
 <div align="center">
     <h2>Inscription</h2>
     <br /><br />
-    <form method="POST"  action="../controller/SignIn.php">
+    <form method="POST"  action="CallSign.php">
         <table>
             <tr>
                 <td align="right">
                     <label for="pseudo">Pseudo :</label>
                 </td>
                 <td>
-                    <input type="text" placeholder="Votre pseudo" id="pseudo" name="pseudo"  />
+                    <input type="text" placeholder="Votre pseudo" id="pseudo" name="username"  />
                 </td>
             </tr>
             <tr>
@@ -42,14 +42,7 @@
                     <input type="email" placeholder="Votre mail" id="mail" name="email" value="" />
                 </td>
             </tr>
-            <tr>
-                <td align="right">
-                    <label for="mail2">Confirmation du mail :</label>
-                </td>
-                <td>
-                    <input type="email" placeholder="Confirmez votre mail" id="mail2" name="email2" value="" />
-                </td>
-            </tr>
+
             <tr>
                 <td align="right">
                     <label for="mdp">Mot de passe :</label>
