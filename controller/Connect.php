@@ -1,11 +1,13 @@
 <?php
-     $user = 'ouss';
-     $pwd = 'root';
+
+function connect()
+{
+    $user = 'ouss';
+    $pwd = 'root';
 
     try {
-        $db= new PDO('mysql:host=localhost;dbname=phproject', $user, $pwd);
+        return new PDO('mysql:host=localhost;dbname=phproject', $user, $pwd);
     } catch (PDOException $e) {
-        print "Erreur !: " . $e->getMessage() . "<br/>";
-        die();
+        return "Erreur !: " . $e->getMessage() . "<br/>";
     }
-?>
+}
