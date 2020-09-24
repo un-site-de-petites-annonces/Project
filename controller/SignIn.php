@@ -1,7 +1,7 @@
 <?php
 ini_set('display_errors', '1');
 
-require_once('../model/Connect.php');
+require_once('../model/Mysql.php');
 
 $bdd = connect();
 
