@@ -1,23 +1,15 @@
 <?php
+ini_set('display_errors', '1');
 
 class Mysql
 {
-    private
-        $serveur = 'localhost',
-        $bdd = 'phproject',
-        $user = 'ouss',
-        $mdp = 'root',
-        $db = '';
+    private $db;
 
 
-    public function __construct($serveur = 'localhost', $bdd = 'phproject', $user = 'ouss', $mdp = 'root')
+    public function __construct()
     {
-        $this->serveur = $serveur;
-        $this->bdd = $bdd;
-        $this->user = $user;
-        $this->mdp = $mdp;
         try {
-            $this->db = new PDO('mysql:host='.$this->serveur .';dbname='.$this->bdd ."'", $this->user, $this->pwd);
+            $this->db = new PDO('mysql:host=localhost;dbname=phproject','ouss', 'root');
             $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
         } catch (PDOException $e) {
