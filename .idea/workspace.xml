@@ -20,10 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78e860ac-1cb0-4d0e-b0c4-cde32d3b4577" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controller/SignIn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/Connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Connect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/signIn.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Connect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/SignIn.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/SignIn.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/SignIn.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/SignIn.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,12 +54,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/controller" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/model" />
       <recent name="$PROJECT_DIR$/controller" />
     </key>
   </component>
@@ -69,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600941560315</updated>
-      <workItem from="1600941561685" duration="3176000" />
+      <workItem from="1600941561685" duration="7650000" />
     </task>
     <servers />
   </component>
@@ -88,13 +94,17 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="200" y="408" width="1397" height="301" key="#SQL_Dialects" timestamp="1600946754732">
+      <screen x="72" y="26" width="1848" height="1054" />
+    </state>
+    <state x="200" y="408" width="1397" height="301" key="#SQL_Dialects/72.26.1848.1054@72.26.1848.1054" timestamp="1600946754732" />
     <state x="692" y="355" width="598" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600941741429">
       <screen x="72" y="26" width="1848" height="1054" />
     </state>
     <state x="692" y="355" width="598" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.26.1848.1054@72.26.1848.1054" timestamp="1600941741429" />
-    <state x="791" y="478" width="399" height="156" key="NewPhpFileDialog" timestamp="1600941866015">
+    <state x="791" y="478" width="399" height="156" key="NewPhpFileDialog" timestamp="1600947036776">
       <screen x="72" y="26" width="1848" height="1054" />
     </state>
-    <state x="791" y="478" width="399" height="156" key="NewPhpFileDialog/72.26.1848.1054@72.26.1848.1054" timestamp="1600941866015" />
+    <state x="791" y="478" width="399" height="156" key="NewPhpFileDialog/72.26.1848.1054@72.26.1848.1054" timestamp="1600947036776" />
   </component>
 </project>

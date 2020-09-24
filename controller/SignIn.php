@@ -1,16 +1,18 @@
 <?php
-require_once('controller/Connect.php');
+ini_set('display_errors', '1');
+
+require_once('../model/Connect.php');
 
 $bdd = connect();
-print_r($bdd);die;
-if(isset($_POST['forminscription'])) {
+
+if(isset($_POST['sin'])) {
 
     $pseudo = htmlspecialchars($_POST['pseudo']);
     $firstname = htmlspecialchars($_POST['firstname']);
     $lastname = htmlspecialchars($_POST['lastname']);
     $email = htmlspecialchars($_POST['email']);
-    $mdp = sha1($_POST['password']);
-    $mdp2 = sha1($_POST['password2']);
+    $mdp = md5($_POST['password']);
+    $mdp2 = md5($_POST['password2']);
     if(!empty($_POST['pseudo']) AND !empty($_POST['email']) AND !empty($_POST['email2']) AND !empty($_POST['password']) AND !empty($_POST['password2'])) {
         $maxChar = strlen($pseudo);
         if($maxChar <= 255) {
@@ -20,18 +22,18 @@ if(isset($_POST['forminscription'])) {
                     $exist = $getEmail->rowCount();
                     if($exist == 0) {
                         if($mdp == $mdp2) {
-                            $insert = $bdd->prepare("INSERT INTO users(pseudo,firstname,lastname, email, password) VALUES(?, ?, ?, ?, ?)");
+                            $insert = $bdd->prepare("INSERT INTO users(username,firstname,lastname, email, password) VALUES(?, ?, ?, ?, ?)");
                             $insert->execute(array($pseudo, $firstname, $lastname, $email, $mdp));
-                            return  "Votre compte a bien été créé ! <a href=\"connexion.php\">Me connecter</a>";
-                        } else return "Vos mots de passes ne correspondent pas !";
+                            echo  "Votre compte a bien été créé ! <a href=\"/phpProject/Project/view/login.html\">Me connecter</a>";
+                        } else echo "Vos mots de passes ne correspondent pas !";
 
-                    }else return "Adresse mail déjà utilisée !";
+                    }else echo "Adresse mail déjà utilisée !";
 
-                }else  return "Votre adresse mail n'est pas valide !";
+                }else  echo "Votre adresse mail n'est pas valide !";
 
-        } else return "Votre pseudo ne doit pas dépasser 255 caractères !";
+        } else echo "Votre pseudo ne doit pas dépasser 255 caractères !";
 
-    } else return "Tous les champs doivent être complétés !";
+    } else echo "Tous les champs doivent être complétés !";
 
 
 }

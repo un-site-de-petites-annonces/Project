@@ -8,7 +8,7 @@
 <div align="center">
     <h2>Inscription</h2>
     <br /><br />
-    <form method="POST" action="../controller/SignIn.php">
+    <form method="POST"  action="../controller/SignIn.php">
         <table>
             <tr>
                 <td align="right">
@@ -70,7 +70,7 @@
                 <td></td>
                 <td align="center">
                     <br />
-                    <input type="submit" name="forminscription" value="Je m'inscris" />
+                    <input type="submit" name="sin" value="Je m'inscris" />
                 </td>
             </tr>
         </table>
