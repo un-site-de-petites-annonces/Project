@@ -1,3 +1,5 @@
+<?php session_start() ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,6 +8,7 @@
 </head>
 <body>
 <form action="testcreate.php" method="post">
+    <?php echo ('yoooo' . $_SESSION['username']); ?>
 
     <div class="container">
         <label for="title"><b>Titre</b></label>
@@ -17,7 +20,10 @@
         <label for="content"><b>Price</b></label>
         <input type="text" placeholder="Prix de l'annonce" name="price" required>
 
-        <button type="submit" name="submitForm" value="valider">Valider</button>
+        <label for="content"><b>Image</b></label>
+        <input type="file" class="custom-file-input" id="imagePath" name="imagePath">
+
+        <button type="submit" name="submitPost" value="valider">Valider</button>
 
     </div>
 </form>
