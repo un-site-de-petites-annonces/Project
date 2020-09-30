@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>New Post</title>
 </head>
 <body>
-<form action="PostController.php" method="post">
+<form action="testcreate.php" method="post">
 
     <div class="container">
-        <label for="username"><b>Username</b></label>
-        <input type="email" placeholder="Enter email" name="email" required>
+        <label for="title"><b>Titre</b></label>
+        <input type="text" placeholder="Titre de l'annonce" name="title" required>
 
-        <label for="password"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="password" required>
+        <label for="content"><b>Contenu</b></label>
+        <input type="text" placeholder="Contenu de l'annonce" name="content" required>
 
-        <button type="submit" name="submitForm" value="se connecter">se connecter</button>
+        <label for="content"><b>Price</b></label>
+        <input type="text" placeholder="Prix de l'annonce" name="price" required>
+
+        <button type="submit" name="submitForm" value="valider">Valider</button>
 
     </div>
-
-
 </form>
 </body>
 </html>
