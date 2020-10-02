@@ -7,7 +7,7 @@
     <title>New Post</title>
 </head>
 <body>
-<form action="testcreate.php" method="post">
+<form action="testcreate.php" method="post" enctype="multipart/form-data">
     <?php echo ('yoooo' . $_SESSION['username']); ?>
 
     <div class="container">
@@ -17,11 +17,11 @@
         <label for="content"><b>Contenu</b></label>
         <input type="text" placeholder="Contenu de l'annonce" name="content" required>
 
-        <label for="content"><b>Price</b></label>
+        <label for="price"><b>Price</b></label>
         <input type="text" placeholder="Prix de l'annonce" name="price" required>
 
-        <label for="content"><b>Image</b></label>
-        <input type="file" class="custom-file-input" id="imagePath" name="imagePath">
+        <label for="image"><b>Image</b></label>
+        <input type="file" name="image" required>
 
         <button type="submit" name="submitPost" value="valider">Valider</button>
 

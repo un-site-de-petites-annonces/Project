@@ -19,22 +19,16 @@ class PostController {
     public function createPost() {
         if(isset($_POST['submitPost'])) {
 
-            $target_dir = "SRC/IMG/";
-            $target_file = $target_dir . basename($_FILES['imagePath']['name']);
-            $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-            if($imageFileType == "jpg" OR $imageFileType == "png" OR $imageFileType == "jpeg"
-            OR $imageFileType == "gif" ){
-                if ($_FILES["imagePath"]["size"] <= 4000000){
-                    move_uploaded_file($_FILES['imagePath']['tmp_name'], $target_file);
-                }
-                else{
-                    echo 'Fichier trop volumineux, 4Mo maximum';
-                }
+            $dossier = '../SRC/IMG';
+            $fichier = basename($_FILES['image']['name']);
+            if(move_uploaded_file($_FILES['image']['tmp_name'], $dossier . $fichier)) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
+            {
+                 echo 'Upload effectué avec succès !';
             }
-            else{
-                echo 'Extension d\'image incompatible, veuillez charger une image .jpg, .png, .jpeg, .gif';
+            else //Sinon (la fonction renvoie FALSE).
+            {
+                 echo 'Echec de l\'upload !';
             }
-            return $target_file;
 
             $title  = htmlspecialchars($_POST['title']);
             $content = htmlspecialchars($_POST['content']);
@@ -44,8 +38,7 @@ class PostController {
             if(!empty($_POST['title']) AND !empty($_POST['content']) AND !empty($_POST['price'])) {
 
                     $post = new Post();
-                        $imgUrl = $target_file;
-                        $post->newPost($title, $content, $priceString, $author, $imgUrl);
+                        $post->newPost($title, $content, $priceString, $author, $fichier);
                         echo "Votre annonce a bien été créée !";
 
             } else echo "Tous les champs doivent être complétés !";
