@@ -7,12 +7,23 @@ private $db;
 public function __construct() {
 
     try {
-        $this->db = new PDO('mysql:host=localhost;dbname=phproject','root', '');
+        $this->db = new PDO('mysql:host=localhost;dbname=phproject','php', '');
         $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $this->db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
     } catch (PDOException $e) {
         return "Erreur !: " . $e->getMessage() . "<br/>";
     }
+    $tbl_posts = "CREATE TABLE IF NOT EXISTS users(
+              id INT(11) NOT NULL AUTO_INCREMENT,
+			  title VARCHAR(16) NOT NULL,
+			  content VARCHAR(16) NOT NULL,
+			  price VARCHAR(16) NOT NULL,
+			  author VARCHAR(255) NOT NULL,
+			  imagePath VARCHAR(255) NOT NULL,
+              PRIMARY KEY (id)
+             )";
+    $tbl_posts = $this->db->prepare($tbl_posts);
+    $tbl_posts->execute();
 }
 
 public function getPosts() {

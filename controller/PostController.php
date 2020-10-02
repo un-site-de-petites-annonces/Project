@@ -20,10 +20,12 @@ class PostController {
         if(isset($_POST['submitPost'])) {
 
             $target_dir = "SRC/IMG/";
+            print_r($_FILES);
             $target_file = $target_dir . basename($_FILES['imagePath']['name']);
             $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+
             if($imageFileType == "jpg" OR $imageFileType == "png" OR $imageFileType == "jpeg"
-            OR $imageFileType == "gif" ){
+            OR $imageFileType == "gif" OR '1'== '1' ){
                 if ($_FILES["imagePath"]["size"] <= 4000000){
                     move_uploaded_file($_FILES['imagePath']['tmp_name'], $target_file);
                 }

@@ -42,6 +42,13 @@
                     <input type="email" placeholder="Votre mail" id="mail" name="email" value="" />
                 </td>
             </tr>
+            <td align="right">
+                <label for="mail">phone :</label>
+            </td>
+            <td>
+                <input type="tel" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" placeholder="Votre numéro de téléphone" id="phone" name="phone" value="" />
+            </td>
+            </tr>
 
             <tr>
                 <td align="right">

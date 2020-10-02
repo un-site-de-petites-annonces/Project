@@ -20,18 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78e860ac-1cb0-4d0e-b0c4-cde32d3b4577" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/view/CallLogout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/CallSign.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/Logout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/SignIn.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexxxx.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Mysql.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Mysql.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/CallLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/CallLogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/CallLogout.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/CallLogout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/CallSign.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/CallSign.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/SignIn.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/SignIn.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/new_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/new_post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/templates_post/list_posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/templates_post/list_posts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/testcreate.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/testcreate.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +48,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution />
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -59,8 +70,9 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/controller" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -73,7 +85,10 @@
       <recent name="$PROJECT_DIR$/controller" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="78e860ac-1cb0-4d0e-b0c4-cde32d3b4577" name="Default Changelist" comment="" />
@@ -82,27 +97,32 @@
       <option name="presentableId" value="Default" />
       <updated>1600941560315</updated>
       <workItem from="1600941561685" duration="14121000" />
+      <workItem from="1601568955141" duration="1037000" />
+      <workItem from="1601626996437" duration="4776000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="200" y="408" width="1397" height="301" key="#SQL_Dialects" timestamp="1600946754732">
-      <screen x="72" y="26" width="1848" height="1054" />
+    <state x="157" y="296" width="982" height="223" key="#SQL_Dialects" timestamp="1601628678015">
+      <screen x="67" y="27" width="1299" height="741" />
     </state>
+    <state x="157" y="296" width="982" height="223" key="#SQL_Dialects/67.27.1299.741@67.27.1299.741" timestamp="1601628678015" />
     <state x="200" y="408" width="1397" height="301" key="#SQL_Dialects/72.26.1848.1054@72.26.1848.1054" timestamp="1600946754732" />
     <state x="692" y="355" width="615" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600954666928">
       <screen x="72" y="26" width="1848" height="1054" />
@@ -112,5 +132,9 @@
       <screen x="72" y="26" width="1848" height="1054" />
     </state>
     <state x="791" y="478" width="399" height="156" key="NewPhpFileDialog/72.26.1848.1054@72.26.1848.1054" timestamp="1600951498445" />
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1601627001569">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1601627001569" />
   </component>
 </project>
