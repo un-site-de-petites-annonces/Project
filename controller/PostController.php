@@ -1,4 +1,5 @@
 <?php
+// Suite à un soucis d'architecture et par manque de temps, l'initialisation de la session est répétée sur l'index.php et a été retirée ici pour éviter un bug à l'affichage.
 require(__DIR__ . '/../model/Post.php');
 ini_set('display_errors', '1');
 
