@@ -1,6 +1,5 @@
 <?php
-require_once(__DIR__ . '/../model/Post.php');
-session_start();
+require(__DIR__ . '/../model/Post.php');
 ini_set('display_errors', '1');
 
 class PostController {
@@ -11,9 +10,11 @@ class PostController {
         $posts = $post->getPosts();
         return $posts;
     }
-
-    public function newPostImage() {
-   
+    
+    public function showPost() {
+        $post = new Post();
+        $showPost = $post->getPost($_GET['id']);
+        return $showPost;
     }
 
     public function createPost() {
@@ -21,14 +22,9 @@ class PostController {
 
             $dossier = '../SRC/IMG';
             $fichier = basename($_FILES['image']['name']);
-            if(move_uploaded_file($_FILES['image']['tmp_name'], $dossier . $fichier)) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
+            if(move_uploaded_file($_FILES['image']['tmp_name'], $dossier . $fichier))
             {
                  echo 'Upload effectué avec succès !';
-            }
-            else //Sinon (la fonction renvoie FALSE).
-            {
-                 echo 'Echec de l\'upload !';
-            }
 
             $title  = htmlspecialchars($_POST['title']);
             $content = htmlspecialchars($_POST['content']);
@@ -46,4 +42,5 @@ class PostController {
     }
 
 
+}
 }

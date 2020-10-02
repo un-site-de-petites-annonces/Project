@@ -15,11 +15,24 @@ class Mysql
         } catch (PDOException $e) {
             return "Erreur !: " . $e->getMessage() . "<br/>";
         }
+        $tbl_users = "CREATE TABLE IF NOT EXISTS users(
+              id INT(11) NOT NULL AUTO_INCREMENT,
+			  username VARCHAR(16) NOT NULL,
+			  firstname VARCHAR(16) NOT NULL,
+			  lastname VARCHAR(16) NOT NULL,
+			  email VARCHAR(255) NOT NULL,
+			  password VARCHAR(255) NOT NULL,
+			  phone VARCHAR(255) NOT NULL,
+              PRIMARY KEY (id)
+             )";
+        $tbl_users = $this->db->prepare($tbl_users);
+        $tbl_users->execute();
     }
 
-    public function newUser($username, $firstname, $lastname, $email, $mdp){
-        $req = $this->db->prepare("INSERT INTO users(username,firstname,lastname, email, password) VALUES(?, ?, ?, ?, ?)");
-        $req->execute(array($username, $firstname, $lastname, $email, $mdp));
+    public function newUser($username, $firstname, $lastname, $email, $phone, $mdp){
+
+        $req = $this->db->prepare("INSERT INTO users(username,firstname,lastname, email,phone, password) VALUES(?, ?, ?, ?, ?, ?)");
+        $req->execute(array($username, $firstname, $lastname, $email, $phone, $mdp));
         return 'Compte Crée';
 
     }

@@ -13,6 +13,7 @@ class UserController
             $firstname = htmlspecialchars($_POST['firstname']);
             $lastname = htmlspecialchars($_POST['lastname']);
             $email = htmlspecialchars($_POST['email']);
+            $phone = htmlspecialchars($_POST['phone']);
             $mdp = md5($_POST['password']);
             $mdp2 = md5($_POST['password2']);
             if(!empty($_POST['username']) AND !empty($_POST['lastname'])AND !empty($_POST['firstname']) AND !empty($_POST['email']) AND !empty($_POST['password']) AND !empty($_POST['password2'])) {
@@ -25,7 +26,7 @@ class UserController
                             if ($mysql->emailExist($email)) {
                                 echo "Adresse mail déjà utilisée !";
                             } else {
-                                $mysql->newUser($username, $firstname, $lastname, $email, $mdp);
+                                $mysql->newUser($username, $firstname, $lastname, $email, $phone, $mdp);
                                 echo "Votre compte a bien été créé ! <a href=\"/phpProject/Project/view/login.html\">Me connecter</a>";
                             }
                         }

@@ -1,4 +1,5 @@
 <?php
-require_once (__DIR__ . '/../controller/PostController.php');
+require_once ('../controller/PostController.php');
 
 echo (new PostController())->createPost();
+header('Location: /Projet PHP/Project/index.php');

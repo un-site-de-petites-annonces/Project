@@ -1,14 +1,9 @@
-<?php session_start() ?>
+<?php 
+require('../index.php');
+?>
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>New Post</title>
-</head>
 <body>
 <form action="testcreate.php" method="post" enctype="multipart/form-data">
-    <?php echo ('yoooo' . $_SESSION['username']); ?>
 
     <div class="container">
         <label for="title"><b>Titre</b></label>
